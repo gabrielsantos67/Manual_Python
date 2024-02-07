@@ -81,3 +81,15 @@ for l in range(linhas):
     for c in range(colunas):
         print(simbol, end = ' ')
     print()
+
+# Utilizando o for faça uma tabuada
+# Solicita ao usuário que digite um número e armazena-o como um número inteiro
+numero = int(input("Digite um número: "))
+# Imprime o cabeçalho da tabuada para o número digitado pelo usuário
+print(f"Tabuada do {numero}")
+# Itera sobre os números de 1 a 10 usando um loop for
+for i in range(1, 11):
+    # Calcula o resultado da multiplicação entre o número digitado e o número atual do loop
+    result = numero * i
+    # Imprime a operação de multiplicação e seu resultado formatados
+    print(f"{numero} X {i} = {result}")

@@ -1,9 +1,3 @@
-# Utilizamos para repetição até chegar no false
-contador = 0 
-while contador < 5:
-    print(f"Valor do contador é: {contador}")
-    contador +=1
-
 # Utilizando o while para repetição com o 999 para sair
 n = int(input("Digite um número para ser somado: [999 - para parar]"))
 soma = 0
@@ -120,3 +114,30 @@ while True:
 print(f"Você venceu {ptsusuario} partidas")
 print(f"Você venceu {ptscomputador} partidas")
 
+# Utilizando o for faça uma tabuada
+# Solicita ao usuário que digite um número e armazena-o como um número inteiro
+numero = int(input("Digite um número: "))
+# Imprime o cabeçalho da tabuada para o número digitado pelo usuário
+print(f"Tabuada do {numero}")
+# Itera sobre os números de 1 a 10 usando um loop for
+for i in range(1, 11):
+    # Calcula o resultado da multiplicação entre o número digitado e o número atual do loop
+    result = numero * i
+    # Imprime a operação de multiplicação e seu resultado formatados
+    print(f"{numero} X {i} = {result}")
+
+# Define uma variável chamada 'palavra' com o valor "Apostila de Python"
+palavra = "Apostila de Python"
+
+# len(): Retorna o comprimento da string 'palavra'
+print(len(palavra))
+# capitalize(): Retorna uma cópia da string 'palavra' com a primeira letra maiúscula e as demais minúsculas
+print(palavra.capitalize())
+# count(): Retorna o número de ocorrências da substring "o" na string 'palavra'
+print(palavra.count("o"))
+# startswith(): Retorna True se a string 'palavra' começa com a substring "Ap", caso contrário, retorna False
+print(palavra.startswith("Ap"))
+# endswith(): Retorna True se a string 'palavra' termina com a substring "Py", caso contrário, retorna False
+print(palavra.endswith("Py"))
+# isalnum(): Retorna True se todos os caracteres na string 'palavra' são alfanuméricos (letras ou números), caso contrário, retorna False
+print(palavra.isalnum())
