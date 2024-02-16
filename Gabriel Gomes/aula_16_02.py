@@ -1,0 +1,16 @@
+from tkinter import *
+janela = Tk()
+def click1():
+    etiqueta["text"] = "Olá", entrada.get()
+janela.title("Empresa")
+janela.iconbitmap("kk.ico")
+janela['bg']=('Purple')
+janela.geometry("500x400+50+200") 
+etiqueta = Label(janela, text="Olá mundo", bg="Magenta")
+etiqueta.pack()
+botao = Button(janela, text="Seja Feliz", height= 10, width=20, bg="BlueViolet", cursor= "dot", command=click1, relief= "groove")
+botao.pack()
+entrada = Entry(janela, width=50,)
+entrada.pack()
+entrada.get()
+janela.mainloop()
