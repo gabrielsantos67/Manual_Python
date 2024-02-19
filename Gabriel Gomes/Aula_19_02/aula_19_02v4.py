@@ -1,0 +1,17 @@
+from tkinter import *
+janela = Tk()
+#O frame cria uma borda
+frame1 = LabelFrame(janela, padx= 20, pady=20, text='Frame')
+frame1.grid(column=0, row=0)
+etq1 = Label(frame1, text="Etiqueta 1")
+etq1.grid(column=0, row=0)
+btn1 = Button(frame1, text='Olá Mundo!!')
+btn1.grid(column=0, row=0)
+frame2 = LabelFrame(janela, padx= 20, pady=20, text='Gabriel')
+frame2.grid(column=1, row=0)
+etq2 = Label(frame2, text="Etiqueta 2")
+etq2.grid(column=1, row=0)
+btn2 = Button(frame2, text='Olá Mundo!!')
+btn2.grid(column=1, row=0)
+janela.geometry("500x400+50+200")
+janela.mainloop()
